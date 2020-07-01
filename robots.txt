@@ -2,3 +2,5 @@ User-agent: *
 Allow:
 
 Sitemap: https://khetaguridimitri.github.io/sitemap.xml
+Sitemap: http://khetaguridimitri.github.io/sitemap.xml
+sitemap: KhetaguriDimitri.GitHub.io/Sitemap.xml
