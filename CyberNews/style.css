@@ -17,8 +17,8 @@ body {
 
 #myearth canvas {
 	filter: brightness(2);
-	transform: scale(0.1);
-	transition: filter 5s ease-in-out, transform 1s ease-in-out;
+	transform: scale(0);
+	transition: filter 1s ease-in-out, transform 3s ease-in-out;
 }
 #myearth.earth-ready canvas {
 	filter: none;
@@ -27,4 +27,24 @@ body {
 
 #myearth::before {
 	content: none;
+}
+
+#glow {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 250px;
+	max-width: 250px;
+	height: 250px;
+	max-height: 250px;
+	transform: translate(-50%, -50%);
+	
+	background: radial-gradient(ellipse at center, rgba(0,156,255,0) 33%,rgba(0,156,255,0.12) 52%,rgba(0,156,255,0.05) 54%,rgba(0,156,255,0) 70%);
+	z-index: 200;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 4s ease-in-out;
+}
+#myearth.earth-ready #glow {
+	opacity: 0;
 }
