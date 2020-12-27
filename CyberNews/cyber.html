@@ -2,19 +2,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Cyber News</title>
+	<title>Cyber News - SECLAB.GE</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="style.css">
 <script src="core.js"></script>
 <script>
-if ( location.protocol == 'file:' ) {
-	alert( 'This demo does not work with the file protocol due to browser security restrictions.' );
-}
 
-var myearth;
-var sprites = [];
-
+	var myearth;
+	var sprites = [];
 window.addEventListener( 'load', function() {
 
 	myearth = new Earth( document.getElementById('myearth'), {
@@ -41,7 +37,7 @@ window.addEventListener( 'load', function() {
 		// connections
 		
 		var line = {
-			color : 'red',
+			color : 'blue',
 			opacity: 0.2,
 			hairline: true,
 			offset: -0.5
