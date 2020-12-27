@@ -49,5 +49,5 @@ body {
 	transition: opacity 4s ease-in-out;
 }
 #myearth.earth-ready #glow {
-	opacity: 1;
+	opacity: 0;
 }
